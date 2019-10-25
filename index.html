@@ -1,0 +1,23 @@
+<HTML>
+    <!Foundation Page for building our JavaScript programs>
+        <HEAD>
+            <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+            <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+            <LINK rel="stylesheet" type='text/css' href="Default CSS.css">
+            <TITLE>Approximating PI</TITLE>
+            <!Change Title to name of Proj.>
+        </HEAD>
+        <BODY>
+            <H1 class="title">Approximating PI</H1>
+            <!Change Header to name of Proj.>
+            <SCRIPT src="index.js"> </SCRIPT>
+            Number of Sides on Polygon <input type="text" id="n" autocomplete="off">
+            <br>
+            <input type="submit" value="Calculate" onclick=main()>
+            \begin{equation}{n}{\left({\frac{1}{2}}{\left({\operatorname{sin}{\left({\frac{360}{{n}}} \right)}} \right)} \right)}<\pi<{n}{\left({\frac{1}{2}}{\left({\frac{2}{{\operatorname{cos}{\left(2{\left({\frac{360}{{n}}} \right)} \right)}}+1}} \right)}{\left({\operatorname{sin}{\left({\frac{360}{{n}}} \right)}} \right)} \right)}\end{equation}
+            <br>
+            <a id="num_p"></a>
+            <br>
+            <a id="ineq"></a>
+        </BODY>
+</HTML>
